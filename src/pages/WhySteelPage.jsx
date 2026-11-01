@@ -128,8 +128,8 @@ export default function WhySteelPage() {
         <div className="container-site">
           <div style={{ maxWidth: '900px', margin: '0 auto' }}>
             <img
-              src="/assets/page18_img01.jpeg"
-              alt="Comparison: Plastic water tank vs REEVA Stainless Steel water tank – showing algae and degradation in plastic vs clean SS tank"
+              src="/assets/new_why_ss_vs_plastic.jpeg"
+              alt="Why use SS tank vs plastic – comparison infographic showing benefits of stainless steel over plastic tanks"
               style={{ width: '100%', borderRadius: '4px', border: '1px solid #DDE1E2' }}
             />
           </div>
@@ -325,11 +325,11 @@ export default function WhySteelPage() {
         <div className="container-site" style={{ textAlign: 'center' }}>
           <h2 className="text-heading-2" style={{ marginBottom: '0.875rem' }}>Ready to Explore REEVA Tank Solutions?</h2>
           <p className="text-body" style={{ marginBottom: '2rem', maxWidth: '480px', margin: '0 auto 2rem', color: '#747D81' }}>
-            Browse the full product range or contact us to discuss the right grade and configuration for your application.
+            Browse the full product range or call us at <strong>9220741114</strong> to discuss the right grade and configuration for your application.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link to="/products" className="btn-primary">Browse Products</Link>
-            <Link to="/contact" className="btn-secondary">Contact Us</Link>
+            <Link to="/customization" className="btn-secondary">Customization Guide</Link>
           </div>
         </div>
       </section>

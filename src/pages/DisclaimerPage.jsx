@@ -66,7 +66,7 @@ Pressure vessel design requires calculation by a qualified engineer. Underground
               },
               {
                 title: '9. Contact',
-                content: 'For questions about these terms, contact REEVA AQUATECH using the information provided on the Contact page.',
+                content: 'For questions about these terms, reach REEVA AQUATECH at:\n\nSingh Niwas, Village – Niche Tola Hesag, Don Bosco School Road, Near Sai Anirudha Apartment, Ranchi – 834003\nPhone: 9220741114',
               },
             ].map((section, i) => (
               <div key={i}>

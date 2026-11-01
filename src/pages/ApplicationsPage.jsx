@@ -85,8 +85,8 @@ export default function ApplicationsPage() {
                   Suitability of a specific model for this application depends on the confirmed capacity, design, material grade, and any site-specific engineering requirements. Confirm with REEVA AQUATECH before ordering.
                 </p>
 
-                <Link to="/contact" className="btn-ghost">
-                  Discuss This Application <ArrowRight size={14} />
+                <Link to="/products" className="btn-ghost">
+                  View Suitable Products <ArrowRight size={14} />
                 </Link>
               </div>
             </div>
@@ -107,12 +107,12 @@ export default function ApplicationsPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
             <div>
               <img
-                src="/assets/page05_img01.jpeg"
-                alt="UG rectangular stainless steel tank – 3D view with connection points on top"
+                src="/assets/new_rectangular_tank.jpeg"
+                alt="REEVA THERMOPRO rectangular SS insulated tank – top view with connection points"
                 style={{ width: '100%', borderRadius: '4px', border: '1px solid #DDE1E2' }}
               />
               <p style={{ fontSize: '0.8125rem', color: '#747D81', marginTop: '0.75rem', textAlign: 'center' }}>
-                Rectangular underground tank – connection points on top side
+                Rectangular underground / large-capacity tank – top connections
               </p>
             </div>
             <div>
@@ -134,19 +134,19 @@ export default function ApplicationsPage() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Info strip */}
       <section style={{ backgroundColor: '#252A2D', padding: '3.5rem 0' }}>
         <div className="container-site" style={{ textAlign: 'center' }}>
           <h2 style={{ fontSize: '1.75rem', fontWeight: 600, color: '#ffffff', marginBottom: '0.875rem' }}>
-            Tell Us About Your Application
+            Find the Right Tank for Your Application
           </h2>
           <p style={{ fontSize: '1rem', color: '#9aa4a8', marginBottom: '2rem', maxWidth: '480px', margin: '0 auto 2rem' }}>
-            REEVA AQUATECH can advise on the most suitable product for your installation type, capacity requirement, and site conditions.
+            REEVA AQUATECH can advise on the most suitable product for your installation type, capacity requirement, and site conditions. Call us at <strong style={{ color: '#DDE1E2' }}>9220741114</strong>.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link to="/contact" className="btn-primary">Contact Us <ArrowRight /></Link>
-            <Link to="/products" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1.75rem', backgroundColor: 'transparent', color: '#DDE1E2', fontSize: '0.9375rem', fontWeight: 500, border: '1.5px solid rgba(221,225,226,0.3)', borderRadius: '4px', textDecoration: 'none' }}>
-              Browse Products
+            <Link to="/products" className="btn-primary">Browse Products <ArrowRight /></Link>
+            <Link to="/customization" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1.75rem', backgroundColor: 'transparent', color: '#DDE1E2', fontSize: '0.9375rem', fontWeight: 500, border: '1.5px solid rgba(221,225,226,0.3)', borderRadius: '4px', textDecoration: 'none' }}>
+              Customization Guide
             </Link>
           </div>
         </div>

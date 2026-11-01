@@ -9,6 +9,7 @@ export default function Footer() {
       {/* Main footer */}
       <div className="container-site" style={{ padding: '4rem 1.5rem 3rem' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '3rem' }}>
+
           {/* Brand column */}
           <div style={{ gridColumn: 'span 1' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', marginBottom: '1rem' }}>
@@ -25,15 +26,6 @@ export default function Footer() {
             <p style={{ fontSize: '0.875rem', color: '#9aa4a8', lineHeight: 1.65, marginBottom: '1.25rem', maxWidth: '260px' }}>
               Stainless steel water storage solutions for residential, commercial, and industrial applications.
             </p>
-            <div style={{ fontSize: '0.875rem', color: '#9aa4a8', lineHeight: 1.8 }}>
-              <div>📍 {COMPANY.location}</div>
-              <div style={{ marginTop: '0.375rem' }}>
-                <span style={{ fontStyle: 'italic', color: '#747D81', fontSize: '0.8125rem' }}>Phone: [to be confirmed]</span>
-              </div>
-              <div>
-                <span style={{ fontStyle: 'italic', color: '#747D81', fontSize: '0.8125rem' }}>Email: [to be confirmed]</span>
-              </div>
-            </div>
           </div>
 
           {/* Products */}
@@ -57,7 +49,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Company */}
+          {/* Company Navigation */}
           <div>
             <h3 style={{ fontSize: '0.8125rem', fontWeight: 600, color: '#ffffff', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '1rem' }}>
               Company
@@ -84,33 +76,31 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact / Inquiry */}
+          {/* Company Details */}
           <div>
             <h3 style={{ fontSize: '0.8125rem', fontWeight: 600, color: '#ffffff', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '1rem' }}>
-              Inquiries
+              Office
             </h3>
-            <p style={{ fontSize: '0.875rem', color: '#9aa4a8', lineHeight: 1.6, marginBottom: '1rem' }}>
-              For product inquiries, quotations, and project discussions, please use our contact form.
-            </p>
-            <Link
-              to="/contact"
-              style={{
-                display: 'inline-block',
-                padding: '0.625rem 1.25rem',
-                backgroundColor: '#1479B8',
-                color: '#ffffff',
-                fontSize: '0.875rem',
-                fontWeight: 500,
-                borderRadius: '4px',
-                textDecoration: 'none',
-                transition: 'background-color 0.2s ease',
-              }}
-              onMouseEnter={e => e.target.style.backgroundColor = '#0f5a8a'}
-              onMouseLeave={e => e.target.style.backgroundColor = '#1479B8'}
-            >
-              Contact Us
-            </Link>
+            <address style={{ fontStyle: 'normal', fontSize: '0.875rem', color: '#9aa4a8', lineHeight: 1.8 }}>
+              {COMPANY.addressLines.map((line, i) => (
+                <span key={i} style={{ display: 'block' }}>{line}</span>
+              ))}
+            </address>
+            <div style={{ marginTop: '1rem', fontSize: '0.875rem', color: '#9aa4a8' }}>
+              <span style={{ fontSize: '0.75rem', fontWeight: 600, color: '#747D81', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '0.25rem' }}>
+                Phone
+              </span>
+              <a
+                href={`tel:${COMPANY.phone}`}
+                style={{ color: '#9aa4a8', textDecoration: 'none', transition: 'color 0.15s ease' }}
+                onMouseEnter={e => e.target.style.color = '#1479B8'}
+                onMouseLeave={e => e.target.style.color = '#9aa4a8'}
+              >
+                {COMPANY.phone}
+              </a>
+            </div>
           </div>
+
         </div>
       </div>
 
@@ -124,7 +114,6 @@ export default function Footer() {
             {[
               { label: 'Privacy Policy', path: '/privacy-policy' },
               { label: 'Disclaimer', path: '/disclaimer' },
-              { label: 'Contact', path: '/contact' },
             ].map(item => (
               <Link
                 key={item.path}

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -10,7 +10,6 @@ import ApplicationsPage from './pages/ApplicationsPage'
 import CustomizationPage from './pages/CustomizationPage'
 import AboutPage from './pages/AboutPage'
 import FAQPage from './pages/FAQPage'
-import ContactPage from './pages/ContactPage'
 import PrivacyPage from './pages/PrivacyPage'
 import DisclaimerPage from './pages/DisclaimerPage'
 
@@ -38,9 +37,10 @@ function App() {
             <Route path="/customization" element={<CustomizationPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/faq" element={<FAQPage />} />
-            <Route path="/contact" element={<ContactPage />} />
             <Route path="/privacy-policy" element={<PrivacyPage />} />
             <Route path="/disclaimer" element={<DisclaimerPage />} />
+            {/* Contact page removed – purely informational website */}
+            <Route path="/contact" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
         <Footer />

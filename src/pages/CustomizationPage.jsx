@@ -258,12 +258,12 @@ export default function CustomizationPage() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.5rem' }}>
             {[
-              { src: '/assets/page14_img01.jpeg', label: 'Seam Welding Machine', caption: 'Continuous seam welding for strong, leak-proof shell joints' },
-              { src: '/assets/page15_img01.jpeg', label: 'Laser Welding', caption: 'High-precision laser welding for inner/outer shell and cover joints' },
-              { src: '/assets/page12_img01.jpeg', label: 'Multi-Groove Forming', caption: 'Grooving machine increases shell rigidity and pressure resistance' },
-              { src: '/assets/page11_img01.jpeg', label: 'PUF Insulation Injection', caption: 'PUF insulation at approximately 45 kg/m³ density injected from top' },
-              { src: '/assets/page13_img01.jpeg', label: 'Packing & Finishing', caption: 'Careful finishing, polishing, cleaning, and protective packing' },
-              { src: '/assets/page16_img01.jpeg', label: 'Dispatch & Delivery', caption: 'Securely packed tanks loaded for safe delivery to customer' },
+              { src: '/assets/new_seam_welding.jpeg', label: 'Seam Welding Machine', caption: 'Continuous seam welding for strong, leak-proof shell joints' },
+              { src: '/assets/new_laser_welding.jpeg', label: 'Laser Welding', caption: 'High-precision laser welding for inner/outer shell and cover joints' },
+              { src: '/assets/new_multi_grooving.jpeg', label: 'Multi-Groove Forming', caption: 'Grooving machine increases shell rigidity and pressure resistance' },
+              { src: '/assets/new_puf_insulation.jpeg', label: 'PUF Insulation Injection', caption: 'PUF insulation at approximately 45 kg/m³ density injected from top' },
+              { src: '/assets/new_manufacturing_process.jpeg', label: 'Manufacturing Process', caption: '8-step manufacturing process from sheet cutting to final product' },
+              { src: '/assets/new_dispatch_delivery.jpeg', label: 'Dispatch & Delivery', caption: 'Securely packed tanks loaded for safe delivery to customer' },
             ].map((img, i) => (
               <div key={i} style={{ border: '1px solid #DDE1E2', borderRadius: '4px', overflow: 'hidden' }}>
                 <div style={{ aspectRatio: '4/3', overflow: 'hidden', backgroundColor: '#F7F7F4' }}>
@@ -283,18 +283,26 @@ export default function CustomizationPage() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Company info strip */}
       <section style={{ backgroundColor: '#252A2D', padding: '3.5rem 0' }}>
         <div className="container-site" style={{ textAlign: 'center' }}>
           <h2 style={{ fontSize: '1.75rem', fontWeight: 600, color: '#ffffff', marginBottom: '0.875rem' }}>
             Ready to Specify Your Tank?
           </h2>
-          <p style={{ fontSize: '1rem', color: '#9aa4a8', marginBottom: '2rem', maxWidth: '480px', margin: '0 auto 2rem' }}>
-            Use the contact form to share your project requirements and receive a quotation.
+          <p style={{ fontSize: '1rem', color: '#9aa4a8', marginBottom: '1rem', maxWidth: '480px', margin: '0 auto 1rem' }}>
+            Reach out to REEVA AQUATECH with your project capacity, installation type, and configuration requirements.
           </p>
-          <Link to="/contact" className="btn-primary">
-            Contact REEVA AQUATECH <ArrowRight />
-          </Link>
+          <p style={{ fontSize: '1.0625rem', fontWeight: 500, color: '#DDE1E2', marginBottom: '2rem' }}>
+            Phone: 9220741114
+          </p>
+          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <Link to="/products" className="btn-primary">
+              Browse All Products <ArrowRight />
+            </Link>
+            <Link to="/about" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1.75rem', backgroundColor: 'transparent', color: '#DDE1E2', fontSize: '0.9375rem', fontWeight: 500, border: '1.5px solid rgba(221,225,226,0.3)', borderRadius: '4px', textDecoration: 'none' }}>
+              About REEVA AQUATECH
+            </Link>
+          </div>
         </div>
       </section>
     </>

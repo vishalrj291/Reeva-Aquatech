@@ -50,14 +50,17 @@ export default function FAQPage() {
         </div>
       </section>
 
-      {/* Additional questions CTA */}
+      {/* Additional questions info strip */}
       <section style={{ backgroundColor: '#F7F7F4', borderTop: '1px solid #DDE1E2', padding: '3.5rem 0' }}>
         <div className="container-site" style={{ textAlign: 'center', maxWidth: '560px', margin: '0 auto' }}>
           <h2 className="text-heading-2" style={{ marginBottom: '0.875rem' }}>Have a Question Not Listed Here?</h2>
-          <p className="text-body" style={{ marginBottom: '2rem', color: '#747D81' }}>
-            Use the contact form to ask specific questions about products, specifications, or your project. REEVA AQUATECH will respond with accurate information.
+          <p className="text-body" style={{ marginBottom: '1rem', color: '#747D81' }}>
+            Reach REEVA AQUATECH directly for specific questions about products, specifications, or your project.
           </p>
-          <Link to="/contact" className="btn-primary">Contact REEVA AQUATECH</Link>
+          <p style={{ fontSize: '1.125rem', fontWeight: 600, color: '#252A2D', marginBottom: '1.5rem' }}>
+            Phone: 9220741114
+          </p>
+          <Link to="/products" className="btn-primary">Browse Our Products</Link>
         </div>
       </section>
     </>

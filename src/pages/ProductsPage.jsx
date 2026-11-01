@@ -37,7 +37,7 @@ export default function ProductsPage() {
           {/* Product range overview image */}
           <div style={{ marginBottom: '3.5rem' }}>
             <img
-              src="/assets/page02_img01.jpeg"
+              src="/assets/new_product_range_full.jpeg"
               alt="REEVA AQUATECH complete product range showing all tank types"
               style={{ width: '100%', maxWidth: '680px', borderRadius: '4px', border: '1px solid #DDE1E2', margin: '0 auto', display: 'block' }}
             />
@@ -107,18 +107,18 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Info footer */}
       <section style={{ backgroundColor: '#F7F7F4', borderTop: '1px solid #DDE1E2', padding: '3.5rem 0' }}>
         <div className="container-site" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', alignItems: 'center' }}>
           <div>
             <h2 className="text-heading-2" style={{ marginBottom: '0.875rem' }}>Not sure which model suits your project?</h2>
             <p className="text-body" style={{ color: '#747D81' }}>
-              Share your requirements with REEVA AQUATECH. We can advise on the most suitable product and configuration for your application.
+              REEVA AQUATECH can advise on the most suitable product and configuration for your application. Contact us at <strong>9220741114</strong>.
             </p>
           </div>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-            <Link to="/contact" className="btn-primary">Request a Quotation</Link>
-            <Link to="/customization" className="btn-secondary">Learn About Customization</Link>
+            <Link to="/customization" className="btn-primary">Learn About Customization</Link>
+            <Link to="/why-stainless-steel" className="btn-secondary">Why Stainless Steel?</Link>
           </div>
         </div>
       </section>

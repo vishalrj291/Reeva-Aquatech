@@ -87,11 +87,11 @@ export default function ProductDetailPage() {
 
               {/* CTA */}
               <div style={{ display: 'flex', gap: '0.875rem', flexWrap: 'wrap' }}>
-                <Link to="/contact" className="btn-primary">
-                  Request a Quotation <ArrowRight />
+                <Link to="/products" className="btn-primary">
+                  All Products <ArrowRight />
                 </Link>
-                <Link to="/products" className="btn-secondary">
-                  All Products
+                <Link to="/why-stainless-steel" className="btn-secondary">
+                  Why Stainless Steel?
                 </Link>
               </div>
             </div>
@@ -241,7 +241,7 @@ export default function ProductDetailPage() {
         </section>
       )}
 
-      {/* Inquiry CTA */}
+      {/* Product info section */}
       <section style={{ backgroundColor: '#252A2D', padding: '3.5rem 0' }}>
         <div className="container-site" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', alignItems: 'center' }}>
           <div>
@@ -249,12 +249,12 @@ export default function ProductDetailPage() {
               Interested in {product.name}?
             </h2>
             <p style={{ fontSize: '0.9375rem', color: '#9aa4a8', margin: 0 }}>
-              Contact REEVA AQUATECH with your capacity, installation type, and other requirements to receive a tailored quotation.
+              Reach out to REEVA AQUATECH at <span style={{ color: '#DDE1E2', fontWeight: 500 }}>9220741114</span> with your capacity, installation type, and other requirements.
             </p>
           </div>
           <div style={{ display: 'flex', gap: '0.875rem', flexWrap: 'wrap' }}>
-            <Link to="/contact" className="btn-primary">
-              Request a Quotation <ArrowRight />
+            <Link to="/products" className="btn-primary">
+              Browse All Products <ArrowRight />
             </Link>
             <Link to="/customization" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1.5rem', backgroundColor: 'transparent', color: '#DDE1E2', fontSize: '0.9375rem', fontWeight: 500, border: '1.5px solid rgba(221,225,226,0.3)', borderRadius: '4px', textDecoration: 'none' }}>
               Customization Guide

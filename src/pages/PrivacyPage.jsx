@@ -68,7 +68,7 @@ We do not sell, rent, or share your personal information with third parties for 
               },
               {
                 title: '7. Your Rights',
-                content: 'You may request access to, correction of, or deletion of personal information we hold about you by contacting us using the details on the Contact page. We will respond to verified requests within a reasonable period. [Confirm applicable law and specific rights/timeframes with legal adviser.]',
+                content: 'You may request access to, correction of, or deletion of personal information we hold about you by contacting REEVA AQUATECH at the address below. We will respond to verified requests within a reasonable period. [Confirm applicable law and specific rights/timeframes with legal adviser.]',
               },
               {
                 title: '8. Security',
@@ -79,8 +79,8 @@ We do not sell, rent, or share your personal information with third parties for 
                 content: 'We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. Continued use of the website after changes are posted constitutes acceptance of the updated policy.',
               },
               {
-                title: '10. Contact Us',
-                content: 'For any privacy-related questions or requests, contact REEVA AQUATECH using the information provided on the Contact page of this website.',
+                title: '10. Contact',
+                content: 'For any privacy-related questions or requests, reach REEVA AQUATECH at:\n\nSingh Niwas, Village – Niche Tola Hesag, Don Bosco School Road, Near Sai Anirudha Apartment, Ranchi – 834003\nPhone: 9220741114',
               },
             ].map((section, i) => (
               <div key={i}>

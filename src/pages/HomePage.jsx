@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { PRODUCTS } from '../data'
+import { PRODUCTS, COMPANY } from '../data'
 
 function ArrowRight({ size = 16 }) {
   return (
@@ -41,7 +41,7 @@ const APPLICATIONS_BRIEF = [
 const QUALITY_POINTS = [
   { heading: 'Seam Welding', body: 'Rotating copper-electrode seam welding joins SS sheets continuously, producing strong, leak-proof, uniform seams without filler material.' },
   { heading: 'Laser Welding', body: 'High-precision laser welding provides narrow, clean weld beads with low heat input, minimal distortion, and no discolouration for inner and outer shell joints.' },
-  { heading: 'PUF Insulation', body: 'Polyurethane foam insulation is injected between inner and outer shells at approximately 45 kg/m³ density, maintaining water closer to inlet temperature.' },
+  { heading: 'PUF Insulation', body: 'Polyurethane foam insulation is injected between inner and outer shells at a target density of approximately 45 kg/m³, maintaining water closer to inlet temperature.' },
   { heading: 'Multi-Groove Forming', body: 'Multiple grooves pressed into the SS shell panels increase structural rigidity and pressure resistance while maintaining shape uniformity.' },
   { heading: 'Careful Finishing', body: 'Each tank is trimmed, joint-finished, polished or buffed, cleaned, and packed with foam, bubble wrap, and strapping for safe delivery.' },
 ]
@@ -69,10 +69,10 @@ export default function HomePage() {
               </p>
               <div style={{ display: 'flex', gap: '0.875rem', flexWrap: 'wrap' }}>
                 <Link to="/products" className="btn-primary">
-                  Explore Our Solutions <ArrowRight />
+                  Explore Our Products <ArrowRight />
                 </Link>
-                <Link to="/contact" className="btn-secondary">
-                  Contact Us
+                <Link to="/why-stainless-steel" className="btn-secondary">
+                  Why Stainless Steel?
                 </Link>
               </div>
 
@@ -84,14 +84,14 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Hero image */}
+            {/* Hero image – vertical + horizontal tanks */}
             <div style={{ position: 'relative' }}>
               <img
-                src="/assets/page01_img01.jpeg"
-                alt="REEVA AQUATECH stainless steel vertical water tank – residential and commercial use"
+                src="/assets/new_tank_vertical_horizontal.jpeg"
+                alt="REEVA AQUATECH stainless steel vertical and horizontal water tanks – 1000 L"
                 style={{
                   width: '100%',
-                  maxWidth: '420px',
+                  maxWidth: '520px',
                   borderRadius: '4px',
                   border: '1px solid #DDE1E2',
                   objectFit: 'cover',
@@ -154,7 +154,7 @@ export default function HomePage() {
 
           <div style={{ marginTop: '2.5rem', textAlign: 'center' }}>
             <Link to="/products" className="btn-secondary">
-              View All Products & Specifications
+              View All Products &amp; Specifications
             </Link>
           </div>
         </div>
@@ -168,9 +168,9 @@ export default function HomePage() {
             <h2 className="text-heading-2">Our Full Range of Stainless Steel Tank Types</h2>
           </div>
           <img
-            src="/assets/page02_img01.jpeg"
+            src="/assets/new_product_range_full.jpeg"
             alt="REEVA AQUATECH complete stainless steel tank range – vertical, horizontal, insulated, rooftop, underground, large capacity"
-            style={{ width: '100%', maxWidth: '700px', margin: '0 auto', borderRadius: '4px', border: '1px solid #DDE1E2' }}
+            style={{ width: '100%', maxWidth: '900px', margin: '0 auto', borderRadius: '4px', border: '1px solid #DDE1E2', display: 'block' }}
           />
         </div>
       </section>
@@ -240,7 +240,7 @@ export default function HomePage() {
         <div className="container-site">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '3.5rem', alignItems: 'start' }}>
             <div>
-              <span className="section-label">Quality & Manufacturing</span>
+              <span className="section-label">Quality &amp; Manufacturing</span>
               <h2 className="text-heading-1" style={{ marginBottom: '1rem' }}>
                 Fabricated with<br />Precision Equipment
               </h2>
@@ -251,12 +251,12 @@ export default function HomePage() {
                 From multi-groove forming that adds structural rigidity to seam and laser welding for leak-proof joints, and PUF insulation injection for temperature retention — each process step is carried out systematically before packing and dispatch.
               </p>
               <Link to="/customization" className="btn-ghost">
-                Engineering & Customization <ArrowRight size={14} />
+                Engineering &amp; Customization <ArrowRight size={14} />
               </Link>
             </div>
             <div>
               {QUALITY_POINTS.map((qp, i) => (
-                <div key={i} style={{ display: 'flex', gap: '1rem', paddingBottom: '1.5rem', marginBottom: i < QUALITY_POINTS.length - 1 ? '0' : '0', borderBottom: i < QUALITY_POINTS.length - 1 ? '1px solid #DDE1E2' : 'none', marginTop: i > 0 ? '1.5rem' : '0' }}>
+                <div key={i} style={{ display: 'flex', gap: '1rem', paddingBottom: '1.5rem', borderBottom: i < QUALITY_POINTS.length - 1 ? '1px solid #DDE1E2' : 'none', marginTop: i > 0 ? '1.5rem' : '0' }}>
                   <div style={{ width: '2rem', height: '2rem', backgroundColor: '#e8f4fc', borderRadius: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: '2px' }}>
                     <span style={{ color: '#1479B8', fontSize: '0.75rem', fontWeight: 700 }}>{String(i+1).padStart(2,'0')}</span>
                   </div>
@@ -271,17 +271,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* MANUFACTURING PHOTOS STRIP */}
+      {/* MANUFACTURING PHOTOS STRIP – new high-quality photos */}
       <section style={{ borderTop: '1px solid #DDE1E2', borderBottom: '1px solid #DDE1E2', overflow: 'hidden', backgroundColor: '#F7F7F4' }}>
         <div style={{ display: 'flex', overflowX: 'auto', gap: '0.125rem' }}>
           {[
-            { src: '/assets/page11_img01.jpeg', alt: 'PUF insulation being injected into REEVA tank at factory' },
-            { src: '/assets/page14_img01.jpeg', alt: 'Seam welding machine used in REEVA AQUATECH manufacturing' },
-            { src: '/assets/page15_img01.jpeg', alt: 'Laser welding process at REEVA AQUATECH' },
-            { src: '/assets/page12_img01.jpeg', alt: 'Multi-groove forming machine for tank shell rigidity' },
-            { src: '/assets/page13_img01.jpeg', alt: 'Packing and finishing area at REEVA AQUATECH' },
+            { src: '/assets/new_packing_finishing.jpeg', alt: 'REEVA AQUATECH packing and finishing area – workers preparing tanks for dispatch' },
+            { src: '/assets/new_seam_welding.jpeg', alt: 'Seam welding machine for strong, leak-proof SS tank joints at REEVA AQUATECH' },
+            { src: '/assets/new_laser_welding.jpeg', alt: 'Laser welding process at REEVA AQUATECH manufacturing facility' },
+            { src: '/assets/new_multi_grooving.jpeg', alt: 'Multi-groove forming machine for extra structural strength at REEVA AQUATECH' },
+            { src: '/assets/new_puf_insulation.jpeg', alt: 'PUF insulation injection between inner SS 316 and outer SS 304 shells at REEVA AQUATECH' },
           ].map((img, i) => (
-            <div key={i} style={{ flexShrink: 0, width: '280px', height: '200px', overflow: 'hidden' }}>
+            <div key={i} style={{ flexShrink: 0, width: '320px', height: '220px', overflow: 'hidden' }}>
               <img src={img.src} alt={img.alt} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
             </div>
           ))}
@@ -294,8 +294,8 @@ export default function HomePage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '3rem', alignItems: 'center' }}>
             <div>
               <img
-                src="/assets/page05_img01.jpeg"
-                alt="UG Rectangular Stainless Steel Tank – 3D view showing connection points and installation"
+                src="/assets/new_rectangular_tank.jpeg"
+                alt="REEVA THERMOPRO rectangular SS insulated tank – 5000 LTR with top connections"
                 style={{ width: '100%', borderRadius: '4px', border: '1px solid #DDE1E2' }}
               />
             </div>
@@ -326,23 +326,35 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA BANNER */}
+      {/* COMPANY INFORMATION STRIP – replaces old Contact CTA banner */}
       <section style={{ backgroundColor: '#252A2D', padding: '4rem 0' }}>
         <div className="container-site" style={{ textAlign: 'center' }}>
-          <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2.25rem)', fontWeight: 600, color: '#ffffff', marginBottom: '1rem' }}>
-            Ready to Discuss Your Water Storage Requirement?
+          <img src="/assets/logo.png" alt="REEVA AQUATECH" style={{ height: '52px', margin: '0 auto 1.25rem', display: 'block' }} />
+          <h2 style={{ fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)', fontWeight: 600, color: '#ffffff', marginBottom: '0.375rem', letterSpacing: '0.02em' }}>
+            REEVA AQUATECH
           </h2>
-          <p style={{ fontSize: '1.0625rem', color: '#9aa4a8', marginBottom: '2rem', maxWidth: '520px', margin: '0 auto 2rem' }}>
-            Share your project details and our team will respond with product options and a quotation.
+          <p style={{ fontSize: '0.8125rem', fontWeight: 500, color: '#1479B8', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '2.5rem' }}>
+            Pure Water. Stronger Tomorrow.
           </p>
-          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link to="/contact" className="btn-primary">
-              Contact REEVA AQUATECH <ArrowRight />
-            </Link>
-            <Link to="/products" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1.75rem', backgroundColor: 'transparent', color: '#DDE1E2', fontSize: '0.9375rem', fontWeight: 500, border: '1.5px solid rgba(221,225,226,0.3)', borderRadius: '4px', textDecoration: 'none' }}>
-              Browse Products
-            </Link>
+
+          <div style={{ display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '2.5rem' }}>
+            {/* Address card */}
+            <div style={{ backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '4px', padding: '1.5rem 2rem', textAlign: 'left', minWidth: '220px' }}>
+              <div style={{ fontSize: '0.7rem', fontWeight: 600, color: '#747D81', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.75rem' }}>Office Address</div>
+              {COMPANY.addressLines.map((line, i) => (
+                <div key={i} style={{ fontSize: '0.875rem', color: '#9aa4a8', lineHeight: 1.8 }}>{line}</div>
+              ))}
+            </div>
+            {/* Phone card */}
+            <div style={{ backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '4px', padding: '1.5rem 2rem', textAlign: 'left', minWidth: '180px' }}>
+              <div style={{ fontSize: '0.7rem', fontWeight: 600, color: '#747D81', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.75rem' }}>Phone</div>
+              <div style={{ fontSize: '1.125rem', fontWeight: 500, color: '#DDE1E2' }}>{COMPANY.phone}</div>
+            </div>
           </div>
+
+          <Link to="/products" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1.75rem', backgroundColor: '#1479B8', color: '#ffffff', fontSize: '0.9375rem', fontWeight: 500, border: '1.5px solid #1479B8', borderRadius: '4px', textDecoration: 'none' }}>
+            Explore Our Product Range <ArrowRight />
+          </Link>
         </div>
       </section>
     </>

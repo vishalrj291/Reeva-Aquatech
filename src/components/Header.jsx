@@ -9,7 +9,6 @@ const NAV_ITEMS = [
   { label: 'Applications', path: '/applications' },
   { label: 'Customization', path: '/customization' },
   { label: 'About Us', path: '/about' },
-  { label: 'Contact', path: '/contact' },
 ]
 
 function ChevronIcon({ down = true, size = 14 }) {
@@ -140,7 +139,7 @@ export default function Header() {
                       to="/products"
                       style={{ display: 'block', padding: '0.75rem 1rem', fontSize: '0.875rem', fontWeight: 600, color: '#252A2D', borderBottom: '1px solid #DDE1E2' }}
                     >
-                      All Products & Solutions
+                      All Products &amp; Solutions
                     </Link>
                     {PRODUCTS.map(p => (
                       <Link
@@ -176,11 +175,6 @@ export default function Header() {
             )
           )}
         </nav>
-
-        {/* CTA */}
-        <Link to="/contact" className="btn-primary hidden-mobile" style={{ marginLeft: '0.5rem', padding: '0.5rem 1.25rem', fontSize: '0.875rem', flexShrink: 0 }}>
-          Get a Quote
-        </Link>
 
         {/* Mobile menu button */}
         <button
@@ -243,9 +237,6 @@ export default function Header() {
                 )}
               </div>
             ))}
-            <Link to="/contact" className="btn-primary" style={{ display: 'block', textAlign: 'center', marginTop: '1rem' }}>
-              Get a Quote
-            </Link>
           </div>
         </div>
       )}
